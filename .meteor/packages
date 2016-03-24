@@ -17,12 +17,14 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-kadira:flow-router
 twbs:bootstrap
-accounts-ui
 accounts-password
 react-meteor-data@0.2.6-beta.16
 sanjo:jasmine
 velocity:html-reporter
+ian:accounts-ui-bootstrap-3
+kadira:flow-router@2.11.0
+accounts-facebook
+accounts-google
+service-configuration

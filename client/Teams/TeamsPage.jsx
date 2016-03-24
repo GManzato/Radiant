@@ -1,16 +1,16 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 
-import Messages from '/lib/collections/messages';
+import Teams from '/lib/collections/teams';
 import { createContainer } from 'meteor/react-meteor-data';
 
-import MessagesShow from './MessagesShow.jsx';
+import TeamShow from './TeamsShow.jsx';
 
-Meteor.subscribe("messages");
+Meteor.subscribe("teams");
 
 export default createContainer(() => {
 	return {
-		messages : Messages.find().fetch()
+		teams : Teams.find().fetch()
 	}
-},MessagesShow);
+},TeamShow);
 
