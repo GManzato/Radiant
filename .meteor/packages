@@ -12,13 +12,11 @@ session                 # Client-side reactive dictionary for your app
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
-standard-minifier-css   # CSS minifier run for production mode
 standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 insecure                # Allow all DB writes from clients (for prototyping)
-twbs:bootstrap
 accounts-password
 react-meteor-data@0.2.6-beta.16
 sanjo:jasmine
@@ -28,3 +26,6 @@ kadira:flow-router@2.11.0
 accounts-facebook
 accounts-google
 service-configuration
+juliancwirko:postcss@1.0.0-rc.12
+simple:dev-error-overlay
+orgztion:meteor-global-tether

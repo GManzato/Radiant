@@ -31,6 +31,8 @@ LoggedOut.route("/signup", {
   }
 });
 
+
+
 // Trigger for the logged group, for preventing access to unautorized users
 LoggedIn = FlowRouter.group({
   triggersEnter : [

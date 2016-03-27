@@ -1,0 +1,5 @@
+// here we import bootstrap.scss from node_modules/bootstrap/scss
+// we can ommit .scss extension because of postcss-easy-import extensions option
+// see package.json file for details
+@import 'bootstrap';
+
