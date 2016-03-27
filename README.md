@@ -6,7 +6,7 @@ I needed a project for working on the last version of meteor and react using the
 
 ##What is Radian
 
-I want to do a easy and opensource advanced team chat. 
+I want to do an easy and opensource advanced team chat. 
 
 ##Installation  
 
