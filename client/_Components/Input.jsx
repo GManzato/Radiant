@@ -4,7 +4,6 @@ import {HOC} from 'formsy-react';
 
 class CstmInput extends React.Component {
   changeValue(event) {
-      console.log(this);
       this.props.setValue(event.currentTarget[this.props.type === 'checkbox' ? 'checked' : 'value']);
   }
   render() {

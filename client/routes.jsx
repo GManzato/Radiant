@@ -10,6 +10,10 @@ import Signup from './Public/Signup';
 
 // Logged Page imports
 import TeamsPage from './Teams/TeamsPage';
+import TeamNew from './Teams/TeamNew';
+
+import RoomPage from './Rooms/RoomPage';
+import RoomNew from './Rooms/RoomNew';
 
 
 // Group for public pages
@@ -56,3 +60,30 @@ LoggedIn.route("/teams", {
     });
   }
 });
+
+LoggedIn.route("/teams/new", {
+  action(){
+    mount(Layout, {
+        content: (<TeamNew />)
+    });
+  }
+});
+
+
+LoggedIn.route("/team/:team/:room", {
+    name: "Room",
+    action: function(params) {
+        mount(Layout, {
+          content: (<RoomPage team={params.team} room={params.room} />)
+        })
+    }
+})
+
+LoggedIn.route("/team/:team/new", {
+    name: "NewRoom",
+    action: function(params) {
+        mount(Layout, {
+          content: (<RoomNew team={params.team} />)
+        })
+    }
+})

@@ -15,7 +15,7 @@ export default class MessagesShow extends React.Component {
 	submitMessage(e){
 		e.preventDefault();
 		var message = ReactDOM.findDOMNode(this.refs.newMessage).value;
-		Meteor.call("addMessage", message);
+		Meteor.call("addMessage", message , this.props.room);
 		ReactDOM.findDOMNode(this.refs.newMessage).value = '';
 	}
 
