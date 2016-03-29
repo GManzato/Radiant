@@ -2,11 +2,11 @@
 ### Meteor 1.3 / React / ES6 Modules
 ##Why
 
-I needed a project for working on the last version of meteor and react using the new version of javascript(ES6/ES2015). I have a lot of experience in javascript but I needed a project for working (and showing to my clients) that I can easily handle new technologies ! After a basic version I will work on a React-Native App.
+This app is a playground for testing the new version of Meteor, with React and ES6 Modules.
 
 ##What is Radian
 
-I want to do an easy and opensource advanced team chat. 
+An easy and opensource advanced team chat. 
 
 ##Installation  
 

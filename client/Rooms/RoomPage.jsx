@@ -8,10 +8,9 @@ import MessagesShow from '/client/Messages/MessagesShow';
 
 Meteor.subscribe("messages");
 
-export default createContainer(() => {
-	console.log(this);
+export default createContainer(({ room }) => {
 	return {
-		messages : Messages.find({room_id:this.props.room}).fetch()
+		messages : Messages.find({room_id:room}).fetch()
 	}
 },MessagesShow);
 
