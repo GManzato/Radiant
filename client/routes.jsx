@@ -11,9 +11,11 @@ import Signup from './Public/Signup';
 // Logged Page imports
 import TeamsPage from './Teams/TeamsPage';
 import TeamNew from './Teams/TeamNew';
+import TeamInvite from './Teams/TeamInvite';
 
 import RoomPage from './Rooms/RoomPage';
 import RoomNew from './Rooms/RoomNew';
+
 
 
 // Group for public pages
@@ -69,21 +71,28 @@ LoggedIn.route("/teams/new", {
   }
 });
 
+LoggedIn.route("/team/:team/invite", {
+    name: "NewRoom",
+    action: function(params) {
+        mount(Layout, {
+          content: (<TeamInvite team={params.team} />)
+        })
+    }
+})
+LoggedIn.route("/team/:team/new", {
+    name: "NewRoom",
+    action: function(params) {
+        mount(Layout, {
+          content: (<RoomNew team={params.team} />)
+        })
+    }
+})
 
 LoggedIn.route("/team/:team/:room", {
     name: "Room",
     action: function(params) {
         mount(Layout, {
           content: (<RoomPage team={params.team} room={params.room} />)
-        })
-    }
-})
-
-LoggedIn.route("/team/:team/new", {
-    name: "NewRoom",
-    action: function(params) {
-        mount(Layout, {
-          content: (<RoomNew team={params.team} />)
         })
     }
 })

@@ -19,7 +19,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 accounts-password
 react-meteor-data@0.2.6-beta.16
 ian:accounts-ui-bootstrap-3
-kadira:flow-router@2.11.0
+kadira:flow-router-ssr@3.12.2
 accounts-facebook
 accounts-google
 service-configuration
@@ -27,4 +27,4 @@ juliancwirko:postcss@1.0.0-rc.12
 simple:dev-error-overlay
 orgztion:meteor-global-tether
 random
-practicalmeteor:mocha
+email
