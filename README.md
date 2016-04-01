@@ -14,5 +14,7 @@ You need to install [nodejs](https://nodejs.org/en/download/) and [meteor](https
 
 Clone the repo `git clone git@github.com:GManzato/Radiant.git` in your project directory
 
-After simply type `npm install` and after `meteor`
+- type `npm install` 
+- duplicate 'settings.sample.json' (and add yours datas )
+- type `meteor --settings settings.json`
 

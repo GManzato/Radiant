@@ -1,6 +1,7 @@
 {
   "public": {},
   "private": {
+    "smtp" : "smtp://postmaster@user.mailgun.org:password@smtp.mailgun.org:587/",
     "oAuth": {
       "facebook": {
         "appId": "??",
