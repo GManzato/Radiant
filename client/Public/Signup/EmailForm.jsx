@@ -1,5 +1,6 @@
 import React from 'react';
-import Meteor from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
 
 import CstmInput from '/client/_Components/Input'
 class EmailForm extends React.Component {

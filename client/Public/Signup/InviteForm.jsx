@@ -1,20 +1,24 @@
 import React from 'react';
-import Meteor from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
 
+import CstmInput from '/client/_Components/Input';
+// This class need to be merged with Emailforms. Duplicate !
 
-import CstmInput from '/client/_Components/Input'
-class EmailForm extends React.Component {
+export default class InviteForm extends React.Component {
 	constructor() {
 	    super();
 	    this.submit = this.submit.bind(this);
 	}
 	submit(data){
+		data.email = this.props.invite.email;
 		Accounts.createUser(data,(Error) => {
 			if(Error) {
 				console.log(Error);
 			}
 			else {
-				FlowRouter.go('/');
+				Meteor.call('setUserToTeams');
+				FlowRouter.go('/teams');
 			}
 		});
 	}
@@ -29,6 +33,3 @@ class EmailForm extends React.Component {
 		)
 	}
 }
-
-
-export default EmailForm;
