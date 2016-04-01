@@ -7,6 +7,7 @@ import {Layout} from './app.jsx';
 // Public Pages imports
 import HomePage from './Public/HomePage';
 import Signup from './Public/Signup';
+import InvitePage from './Public/InvitePage';
 
 // Logged Page imports
 import TeamsPage from './Teams/TeamsPage';
@@ -15,7 +16,6 @@ import TeamInvite from './Teams/TeamInvite';
 
 import RoomPage from './Rooms/RoomPage';
 import RoomNew from './Rooms/RoomNew';
-
 
 
 // Group for public pages
@@ -37,6 +37,13 @@ LoggedOut.route("/signup", {
   }
 });
 
+LoggedOut.route("/invite/:invite_id", {  
+  action(params) {
+    mount(Layout, {
+        content: (<InvitePage invite_id={params.invite_id} />)
+    });
+  }
+});
 
 
 // Trigger for the logged group, for preventing access to unautorized users

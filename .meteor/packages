@@ -28,3 +28,4 @@ simple:dev-error-overlay
 orgztion:meteor-global-tether
 random
 email
+dburles:collection-helpers
