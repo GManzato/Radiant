@@ -9,7 +9,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 
 import InviteShow from './InviteShow.jsx';
 
-Meteor.subscribe("teams");
+Meteor.subscribe("teamsPublic");
 
 
 export default createContainer((params) => {

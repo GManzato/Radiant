@@ -29,3 +29,4 @@ orgztion:meteor-global-tether
 random
 email
 dburles:collection-helpers
+aldeed:simple-schema
