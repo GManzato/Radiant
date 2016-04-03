@@ -11,7 +11,7 @@ export default class Team extends React.Component {
 	render() {
 		return (
 			<li className="Team">
-				<a href={'/team/'+ this.props.team._id+ '/' + this.props.team.rooms[0]._id}>{this.props.team.name}</a>  
+				<a href={'/team/'+ this.props.team._id+ '/'}>{this.props.team.name}</a>  
 				<a className="btn btn-primary" href="#">Edit</a> 
 				<a className="btn btn-primary" href={'/team/'+ this.props.team._id+'/new'}>Add Room</a>
 				<a className="btn btn-primary" href={'/team/'+ this.props.team._id+'/invite'}>Invite User</a>

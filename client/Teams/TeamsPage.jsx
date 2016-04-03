@@ -6,9 +6,10 @@ import { createContainer } from 'meteor/react-meteor-data';
 
 import TeamShow from './TeamsShow.jsx';
 
-Meteor.subscribe("teams");
+
 
 export default createContainer(() => {
+	Meteor.subscribe("teams");
 	return {
 		teams : Teams.find().fetch()
 	}

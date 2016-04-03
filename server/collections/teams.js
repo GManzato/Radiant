@@ -7,8 +7,8 @@ Meteor.publish('teams', function (){
 });
 
 
-Meteor.publish('teamsPublic', function(){
-	return Teams.find({userId: {$exists: false}},{
-		fields: Teams.publicFields
-	})
-});
+// Meteor.publish('teamsPublic', function(){
+// 	return Teams.find({userId: {$exists: false}},{
+// 		fields: Teams.publicFields
+// 	})
+// });
