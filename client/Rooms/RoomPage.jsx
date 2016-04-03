@@ -6,9 +6,10 @@ import { createContainer } from 'meteor/react-meteor-data';
 
 import MessagesShow from '/client/Messages/MessagesShow';
 
-Meteor.subscribe("messages");
 
-export default createContainer(({ room }) => {
+
+export default createContainer(({ room , team}) => {
+	Meteor.subscribe("messages",team,room);
 	return {
 		messages : Messages.find({room_id:room}).fetch()
 	}
